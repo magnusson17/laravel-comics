@@ -2,3 +2,22 @@ header div span {
   color: red;
 }
 
+ul li {
+  margin: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.roW {
+  display: flex;
+  justify-content: center;
+}
+
+.coL {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+}
+

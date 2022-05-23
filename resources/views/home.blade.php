@@ -1,35 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div>
-            <span>
-                testa
-            </span>
-        </div>
-    </header>
+@extends('layout.layout')
 
-    <main>
-        <div>
-            <span>
-                corpo
-            </span>
-        </div>
-    </main>
 
-    <footer>
-        <div>
-            <span>
-                piedi
-            </span>
+@section('content')
+
+<main>
+    <div class="containeR">
+        <div class="roW">
+
+            @foreach ($eroi as $array)
+            <div class="coL">
+                ciao
+            </div>
+            @endforeach
         </div>
-    </footer>
-</body>
-</html>
+    </div>
+</main>
+
+@endsection

@@ -232,6 +232,6 @@ Route::get('/', function () {
     $arrayAssociativo = [
         'eroi' => $array
     ];
-    
-    return view('home');
-});
+
+    return view('home', $arrayAssociativo);
+})->name('home');
