@@ -21,9 +21,15 @@ Route::get('/', function () {
 })->name('home');
 
 
-Route::get('/eroe/{id}', function ($id) {
+Route::get('/{id}', function ($id) {
 
     $eroi = config('eroi');
 
-    return view('eroe', ['array' => $eroi]);
+    if( is_numeric($id) && $id < count($eroi) ) {
+        $eroe = $eroi[$id];
+        return view('eroe', ['array' => $eroi]);
+    } else {
+        abort(404);
+    };
+
 })->name('eroe');
