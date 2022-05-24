@@ -15,21 +15,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $eroi = config('eroi');
+    $comics = config('comics');
 
-    return view('home', ['array' => $eroi]);
+    return view('home', ['comicsContainer' => $comics]);
 })->name('home');
 
 
 Route::get('/{id}', function ($id) {
 
-    $eroi = config('eroi');
+    $comics = config('comics');
 
-    if( is_numeric($id) && $id < count($eroi) ) {
-        $eroe = $eroi[$id];
-        return view('eroe', ['array' => $eroe]);
+    if( is_numeric($id) && $id < count($comics) ) {
+        $comic = $comics[$id];
+        return view('comic', ['singleComicContainer' => $comic]);
     } else {
         abort(404);
     };
 
-})->name('eroe');
+})->name('comic');
