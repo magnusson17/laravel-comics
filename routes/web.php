@@ -27,7 +27,7 @@ Route::get('/{id}', function ($id) {
 
     if( is_numeric($id) && $id < count($eroi) ) {
         $eroe = $eroi[$id];
-        return view('eroe', ['array' => $eroi]);
+        return view('eroe', ['array' => $eroe]);
     } else {
         abort(404);
     };

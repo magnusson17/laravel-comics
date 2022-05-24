@@ -1,4 +1,5 @@
 .bg_footer {
+    // sono dentro app.css (che a sua volta è dentro public) (cio perche ho messo option in webpack, se no il percorso era piu lungo)
     background-image: url('../images/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,12 +1,16 @@
 @extends('layout.layout')
 
 @section('content')
-<div>
-    <div>
-        <div>
+<div class="p_40">
+    <div class="d_flex justify_content_center align_items_center">
+        <div class="w_50 p_10">
             <h2>{{ $array['title'] }}</h2>
-            {{-- <img src="{{ $array['thumb'] }}" alt=""> --}}
+            <p>{{ $array['description'] }}</p>
         </div>
+        <div class="">
+            <img src="{{ asset('images/adv.jpg') }}" alt="img">
+        </div>
+            {{-- <img src="{{ $array['thumb'] }}" alt=""> --}}
     </div>
 </div>
     
