@@ -2,8 +2,8 @@
     <div class="containeR">
         <div class="roW">
             <ul class="coL">
-                <li>characters</li>
-                <li>comics</li>
+                <li class="{{ Request::route()->getName() == 'eroe' ? 'active' : '' }}">characters</li>
+                <li class="{{ Request::route()->getName() == 'home' ? 'active' : '' }}">comics</li>
                 <li>movies</li>
                 <li>tv</li>
                 <li>games</li>

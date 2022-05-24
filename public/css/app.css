@@ -24,6 +24,10 @@ ul li {
   background-position: top;
 }
 
+.active {
+  color: red;
+}
+
 ul li {
   list-style: none;
 }
