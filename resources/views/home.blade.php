@@ -7,7 +7,9 @@
     <div class="containeR">
         <div class="roW">
 
-            @foreach ($eroi as $array)
+            @foreach ($array as $key => $eroi)
+
+            <a href=" {{ route ( 'eroe', ['id' => $key] ) }} ">vai</a>
             <div class="coL">
                 ciao
             </div>
