@@ -22,3 +22,10 @@ ul {
 .coL {
     display: flex;
 }
+
+.bg_jumbotron {
+    background-image: url('../images/jumbotron.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}

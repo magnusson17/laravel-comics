@@ -14,5 +14,10 @@
                 <li>shop</li>
             </ul>
         </div>
+
+        <div class="h_40vh bg_jumbotron">
+            {{-- con asset() entro direttamente nella cartella public come percorso --}}
+            {{-- <img class="h_30vh" src="{{ asset('images/jumbotron.jpg')}}" alt=""> --}}
+        </div>
     </div>
 </header>

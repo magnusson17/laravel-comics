@@ -17,6 +17,13 @@ ul li {
   display: flex;
 }
 
+.bg_jumbotron {
+  background-image: url("../images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
 ul li {
   list-style: none;
 }
@@ -97,6 +104,14 @@ ul li {
   height: 100%;
 }
 
+.h_30vh {
+  height: 30vh;
+}
+
+.h_40vh {
+  height: 40vh;
+}
+
 .h_70vh {
   height: 70vh;
 }
@@ -107,6 +122,10 @@ ul li {
 
 .h_200px {
   height: 200px;
+}
+
+.m_auto {
+  margin: auto;
 }
 
 .mt_10 {
@@ -188,6 +207,10 @@ ul li {
 
 .p_20 {
   padding: 20px;
+}
+
+.p_40 {
+  padding: 40px;
 }
 
 .p_60 {
@@ -408,3 +431,9 @@ ul li {
   color: black;
 }
 
+.bg_footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}

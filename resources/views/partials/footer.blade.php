@@ -1,9 +1,9 @@
 <footer>
     <div>
         <div>
-            <p class="d_flex justify_content_center color_red">
-                this is the footer
-            </p>
+            <div class="h_30vh bg_footer">
+
+            </div>
         </div>
     </div>
 </footer>

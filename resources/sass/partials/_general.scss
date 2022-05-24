@@ -88,6 +88,14 @@ $bg_3rd_color: #1e1e1e;
     height: 100%;
 }
 
+.h_30vh {
+    height: 30vh;
+}
+
+.h_40vh {
+    height: 40vh;
+}
+
 .h_70vh {
     height: 70vh;
 }
@@ -100,6 +108,10 @@ $bg_3rd_color: #1e1e1e;
     height: 200px;
 }
 // MARGIN
+.m_auto {
+    margin: auto;
+}
+
 .mt_10 {
     margin-top: 10px;
 }
@@ -179,6 +191,10 @@ $bg_3rd_color: #1e1e1e;
 
 .p_20 {
     padding: 20px;
+}
+
+.p_40 {
+    padding: 40px;
 }
 
 .p_60 {

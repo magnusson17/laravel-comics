@@ -4,16 +4,19 @@
 @section('content')
 
 <main>
-    <div class="containeR">
-        <div class="roW">
+    <div class="p_40">
+        <div class="">
+            <div class="text_center">
+                @foreach ($array as $key => $eroi)
 
-            @foreach ($array as $key => $eroi)
+                <a href="{{ route('eroe', ['id' => $key] ) }}">
 
-            <a href=" {{ route ( 'eroe', ['id' => $key] ) }} ">vai</a>
-            <div class="coL">
-                ciao
+                    <img src="{{ $eroi['thumb'] }}" alt="">
+                    
+                </a>
+                @endforeach
             </div>
-            @endforeach
+
         </div>
     </div>
 </main>
