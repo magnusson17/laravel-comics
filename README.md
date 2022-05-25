@@ -77,18 +77,27 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-Clonazione Progetto Laravel Già avviato
-Clonare sul pc il progetto da github
-Apriamo il progetto con VS Code
-Creiamo dentro il progetto un nuovo file 📃 .env
-Copiamo e incolliamo dentro il file 📃 .env il contenuto di .env.example
-Apriamo il terminale nel progetto e lanciamo il comando: composer install ( Se escono errori passiamo al comando: composer update )
-Lanciamo poi il comando: php artisan key:generate
-Installiamo le dipendenze di Node con il comando: npm install
-Al termine possiamo attivare il server con il comando: php artisan serve
-Creare file fake database nella cartella config e richiamarlo nella rotta
-Creare un array multidimensionale con dentro array associativi
-Inserire l'array nella 📁 config e anzichè nominare l'array muldimensionale mettere un "return" all'inizio
+
+
+
+
+APPUNTI
+## Clonazione Progetto Laravel Già avviato
+
+1. Clonare sul pc il progetto da github
+2. Apriamo il progetto con VS Code
+3. Creiamo dentro il progetto un nuovo file 📃 .env
+4. Copiamo e incolliamo dentro il file 📃 .env il contenuto di .env.example
+5. Apriamo il terminale nel progetto e lanciamo il comando: ```composer install``` ( Se escono errori passiamo al comando: ```composer update``` )
+6. Lanciamo poi il comando: ```php artisan key:generate```
+7. Installiamo le dipendenze di Node con il comando: ```npm install```
+8. Al termine possiamo attivare il server con il comando: ```php artisan serve```
+
+## Creare file fake database nella cartella config e richiamarlo nella rotta
+
+1. Creare un array multidimensionale con dentro array associativi
+2. Inserire l'array nella 📁 config e anzichè nominare l'array muldimensionale mettere un "return" all'inizio
+```
 //config/pasta.php
 <?php
 return [
@@ -105,52 +114,65 @@ return [
 ...
 ];
 ?>
-Nel 📃web.php importare il file in una variabile: $pasta = config('pasta');
-Impostare il return della rotta get così per associazione chiave => valore: return view('prodotti', ['products' => $pasta] );
-Iniziare progetto laravel 7 da zero
-Aprire vs code, entrare nella cartella dove lanciare il progetto e lanciare da terminale il comando: composer create-project --prefer-dist laravel/laravel:^7.0 [NOME PROGETTO]
-Entriamo nella cartella progetto e lanciamo i comandi per creare la repository:
-Creare una Repository direttamente sul profilo personale di Github
-Aprire il terminale preferito e spostarsi nella cartella di lavoro che si vuole inizializzare come repository
-Utilizzare il comando git init
-Poi il comando git add -A
-Poi il comando git commit -m " Testo del commit "
-Poi il comando git remote add origin .........URL DELLA REPO........
-Poi il secondo comando git push -u origin master
-Se vogliamo utilizzare Sass:
-Lanciamo da terminale il comando: npm i
-Poi il comando: npm run dev
-Poi il comando: npm run watch
-Per gestire gli url delle immagini caricate in sass, modificare il file 📃 webpack.mix.js aggiungendo le options in questo modo:
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .options({
-    processCssUrls: false});
-Per attivare il progetto lanciare il comando: php artisan serve
-Pulire la cache della cartella config
-Se modifichiamo i file della cartella config dobbiamo lanciare il comando: php artisan config:clear
-Creare la tabella con le rotte create in laravel
-Lanciamo il comando da terminale: php artisan route:list
-Pulire la cache di laravel
-lanciamo il comando da terminale: php artisan cache:clear
-Pulire la cache di npm
-lanciamo il comando da terminale: npm cache clear --force (utile se npm install non funziona)
-fontawesome
-Lanciare d aterminale il comando: npm install @fortawesome/fontawesome-free
-Inserire l'import nel file 📃app.scss : @import '~@fortawesome/fontawesome-free/css/all.css';
-Lanciare d aterminale il comando: npm run dev
-Inserire un icona free di prova
-importare bootstrap 5 in laravel 7
-Lanciare il comando da terminale: npm install bootstrap
-Lanciare il comando da terminale: npm i @popperjs/core
-Aprire il file 📃app.scss e inserire:
+```
+
+3. Nel 📃web.php importare il file in una variabile: ``` $pasta = config('pasta'); ```
+4. Impostare il return della rotta get così per associazione chiave => valore: ``` return view('prodotti', ['products' => $pasta] ); ```
+
+## Iniziare progetto laravel 7 da zero
+
+1. Aprire vs code, entrare nella cartella dove lanciare il progetto e lanciare da terminale il comando:
+```composer create-project --prefer-dist laravel/laravel:^7.0 [NOME PROGETTO]```
+2. Entriamo nella cartella progetto e lanciamo i comandi per creare la repository:
+   1. Creare una Repository direttamente sul profilo personale di Github
+   2. Aprire il terminale preferito e spostarsi nella cartella di lavoro che si vuole inizializzare come repository
+   3. Utilizzare il comando ``` git init ```
+   4. Poi il comando ```git add -A ```
+   5. Poi il comando ```git commit -m " Testo del commit " ```
+   6. Poi il comando ```git remote add origin .........URL DELLA REPO........```
+   7. Poi il secondo comando ```git push -u origin master```
+3. Se vogliamo utilizzare Sass:
+    1. Lanciamo da terminale il comando: ```npm i```
+    2. Poi il comando: ```npm run dev```
+    3. Poi il comando: ```npm run watch```
+    4. Per gestire gli url delle immagini caricate in sass, modificare il file 📃 webpack.mix.js aggiungendo le options in questo modo:
+    ```
+    mix.js('resources/js/app.js', 'public/js')
+        .sass('resources/sass/app.scss', 'public/css')
+        .options({
+        processCssUrls: false});
+    ```
+4. Per attivare il progetto lanciare il comando: ```php artisan serve```
+## Pulire la cache della cartella config
+1. Se modifichiamo i file della cartella config dobbiamo lanciare il comando: ```php artisan config:clear```
+## Creare la tabella con le rotte create in laravel
+1. Lanciamo il comando da terminale: ```php artisan route:list```
+## Pulire la cache di laravel
+1. lanciamo il comando da terminale: ```php artisan cache:clear```
+## Pulire la cache di npm
+1. lanciamo il comando da terminale: ```npm cache clear --force``` (utile se ```npm install``` non funziona)
+## fontawesome
+1. Lanciare d aterminale il comando: ```npm install @fortawesome/fontawesome-free```
+2. Inserire l'import nel file 📃app.scss : ```@import '~@fortawesome/fontawesome-free/css/all.css';```
+3. Lanciare d aterminale il comando: ```npm run dev```
+4. Inserire un icona free di prova
+## importare bootstrap 5 in laravel 7
+1. Lanciare il comando da terminale: ```npm install bootstrap```
+2. Lanciare il comando da terminale: ```npm i @popperjs/core```
+3. Aprire il file 📃app.scss e inserire:
+```
 @import '~bootstrap/dist/css/bootstrap.min.css';
-Andare nel file app.js nella cartella resources e inserire:
+```
+4. Andare nel file app.js nella cartella resources e inserire:
+```
 import '../../node_modules/@popperjs/core/dist/umd/popper.min.js';
 import 'bootstrap/js/dist/dropdown';
-Creare nella view del layout il collegamento ai file compilati da webpack.mix.js:
+```
+5. Creare nella view del layout il collegamento ai file compilati da webpack.mix.js:
+```
 <link rel="stylesheet" href=" {{ asset('css/app.css') }} ">
 
 <script src=" {{ asset('js/app.js') }} "></script>
-Rilanciare d azero il comando da terminale: npm run watch
-Usare le classi di bootstrap 5 nelle views
+```
+6. Rilanciare d azero il comando da terminale: ```npm run watch```
+7. Usare le classi di bootstrap 5 nelle views
